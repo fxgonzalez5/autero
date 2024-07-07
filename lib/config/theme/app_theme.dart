@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class AppTheme {
-
   static const Color primary =  Color(0xffF7C473);
-
-  AppTheme();
 
   ThemeData getTheme(BuildContext context) => ThemeData(
     useMaterial3: true,
@@ -16,21 +13,27 @@ class AppTheme {
       secondary: Colors.black,    
     ),
 
-    inputDecorationTheme: InputDecorationTheme(
-        filled: true,
-        fillColor: Colors.transparent,
-        hintStyle: const TextStyle(color: Colors.white, fontWeight: FontWeight.w300), 
-        suffixIconColor: Colors.white,
-        enabledBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.white),
-          borderRadius: BorderRadius.circular(Responsive(context).ip(2)),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: Colors.white),
-          borderRadius: BorderRadius.circular(Responsive(context).ip(2)),
-        ),
-      ),
+    // Define el estilo de textos generales aquí. 
+    // textTheme: TextTheme(
+    //   titleLarge: TextStyle()
+    // ),
 
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.transparent,
+      hintStyle: const TextStyle(color: Colors.white, fontWeight: FontWeight.w300), 
+      suffixIconColor: Colors.white,
+      enabledBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: Colors.white),
+        borderRadius: BorderRadius.circular(Responsive(context).ip(2)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: Colors.white),
+        borderRadius: BorderRadius.circular(Responsive(context).ip(2)),
+      ),
+    ),
+
+    // Modificar el estilo general de los botones aquí.
     elevatedButtonTheme: const ElevatedButtonThemeData(
       style: ButtonStyle(
         backgroundColor: WidgetStatePropertyAll(Colors.white),
@@ -56,5 +59,7 @@ class AppTheme {
         splashFactory: NoSplash.splashFactory
       ),
     ),
+
+    // Define el estilo general de algún widget aquí (Ejem. Card, Chips, etc).
   );
 }

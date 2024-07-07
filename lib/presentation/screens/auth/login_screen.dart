@@ -64,9 +64,7 @@ class LoginScreen extends StatelessWidget {
                   textStyle: TextStyle(fontSize: responsive.ip(1.8))
                 ),
                 child: const Text('Ingresar'),
-                onPressed: () {
-                  // TODO: Implementar la navegación a la pantalla de inicio
-                },
+                onPressed: () => context.go('/home/0'),
               ),
               TextButton(
                 child: const Text('Crea tu cuenta'),

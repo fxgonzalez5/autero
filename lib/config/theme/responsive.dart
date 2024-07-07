@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/widgets.dart'; 
 
+// Clase para hacer un diseño responsivo (NO ES NECESARIO MODIFICAR)
 class Responsive {
 
   // Propiedades privadas para almacenar ancho, alto y diagonal de la pantalla

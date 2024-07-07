@@ -72,9 +72,7 @@ class RegisterScreen extends StatelessWidget {
                   textStyle: TextStyle(fontSize: responsive.ip(1.8))
                 ),
                 child: const Text('Crear Cuenta'),
-                onPressed: () {
-                  // TODO: Implementar la navegación a la pantalla de inicio
-                },
+               onPressed: () => context.go('/home/0'),
               ),
               TextButton(
                 child: const Text('Iniciar Sesión'),
